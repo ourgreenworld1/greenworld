@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form id="login-form" class="box">
+        <h1>Login</h1>
+        <div class="input-group">
+            <input type="text" name="username" placeholder="Username">
+            <span class="icon"><i class="fas fa-user"></i></span>
+        </div>
+        <div class="input-group">
+            <input type="password" name="password" placeholder="Password">
+            <span class="icon"><i class="fas fa-lock"></i></span>
+        </div>
+        <input type="submit" name="login" value="Login">
+        <p class="no-select">Not yet a member? <a href="#" id="signup-link">Sign up</a></p>
+    </form>
+
+    <form id="signup-form" class="box hidden">
+        <h1>Sign Up</h1>
+        <div class="input-group">
+            <input type="text" name="username" placeholder="Username">
+            <span class="icon"><i class="fas fa-user"></i></span>
+        </div>
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Email">
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+        </div>
+        <div class="input-group">
+            <input type="password" name="password" placeholder="Password">
+            <span class="icon"><i class="fas fa-lock"></i></span>
+        </div>
+        <div class="input-group">
+            <input type="password" name="confirm-password" placeholder="Confirm Password">
+            <span class="icon"><i class="fas fa-lock"></i></span>
+        </div>
+        <input type="submit" name="signup" value="Sign Up">
+        <p class="no-select">Already a member? <a href="toi.html" id="login-link">Login</a></p>
+    </form>
+
+    <div id="signup-success" class="box hidden">
+        <h1>Sign Up Successfully</h1>
+        <p>Will change to login in <span id="countdown">3</span> seconds</p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
